@@ -1,0 +1,14 @@
+ORALCLIN — LOGIN OFICIAL INICIAL
+
+E-mail: admin@oralclin.com.br
+Senha: OralClin@2026
+
+Como funciona:
+- Se a coleção "users" estiver vazia, o primeiro acesso cria automaticamente o administrador no banco configurado.
+- A senha é persistida somente como hash PBKDF2-SHA256.
+- Depois da criação, o login consulta exclusivamente o usuário salvo no banco.
+- O administrador pode trocar a senha dentro do painel.
+
+IMPORTANTE:
+- O Supabase precisa estar configurado pelas variáveis NEXT_PUBLIC_SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY.
+- Em produção, troque a senha inicial depois do primeiro acesso.
